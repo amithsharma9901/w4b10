@@ -1,0 +1,215 @@
+
+
+C:\VAR>git --version
+git version 2.46.0.windows.1
+
+C:\VAR>md gitrepo
+
+C:\VAR>cd gitrepo
+
+C:\VAR\gitrepo>git init
+Initialized empty Git repository in C:/VAR/gitrepo/.git/
+
+C:\VAR\gitrepo>git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+C:\VAR\gitrepo>notepad intro.txt
+
+C:\VAR\gitrepo>dir
+ Volume in drive C has no label.
+ Volume Serial Number is BA7E-9F7B
+
+ Directory of C:\VAR\gitrepo
+
+10/10/2024  09:36 AM    <DIR>          .
+10/10/2024  09:33 AM    <DIR>          ..
+10/10/2024  09:36 AM                16 intro.txt
+               1 File(s)             16 bytes
+               2 Dir(s)  357,313,368,064 bytes free
+
+C:\VAR\gitrepo>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        intro.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\VAR\gitrepo>git add intro.txt
+
+C:\VAR\gitrepo>git commit -m "first commit"
+[master (root-commit) 52e761f] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 intro.txt
+
+C:\VAR\gitrepo>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\VAR\gitrepo>git log
+commit 52e761f5fe66586a3fad5cc068af46b4075ef63e (HEAD -> master)
+Author: arunajava567 <arunajava5672gmail.com>
+Date:   Thu Oct 10 09:39:30 2024 +0530
+
+    first commit
+
+C:\VAR\gitrepo>notepad  readme.txt
+
+C:\VAR\gitrepo>dir
+ Volume in drive C has no label.
+ Volume Serial Number is BA7E-9F7B
+
+ Directory of C:\VAR\gitrepo
+
+10/10/2024  09:40 AM    <DIR>          .
+10/10/2024  09:33 AM    <DIR>          ..
+10/10/2024  09:36 AM                16 intro.txt
+10/10/2024  09:41 AM                14 readme.txt
+               2 File(s)             30 bytes
+               2 Dir(s)  357,311,823,872 bytes free
+
+C:\VAR\gitrepo>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        readme.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\VAR\gitrepo>git log
+commit 52e761f5fe66586a3fad5cc068af46b4075ef63e (HEAD -> master)
+Author: arunajava567 <arunajava5672gmail.com>
+Date:   Thu Oct 10 09:39:30 2024 +0530
+
+    first commit
+
+C:\VAR\gitrepo>git add readme.txt
+
+C:\VAR\gitrepo>git commit -m "second commit"
+[master 8e78eaa] second commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 readme.txt
+
+C:\VAR\gitrepo>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\VAR\gitrepo>git log
+commit 8e78eaae9859b31bd9ed3e115379c492360c831b (HEAD -> master)
+Author: arunajava567 <arunajava5672gmail.com>
+Date:   Thu Oct 10 09:42:22 2024 +0530
+
+    second commit
+
+commit 52e761f5fe66586a3fad5cc068af46b4075ef63e
+Author: arunajava567 <arunajava5672gmail.com>
+Date:   Thu Oct 10 09:39:30 2024 +0530
+
+    first commit
+
+C:\VAR\gitrepo>git diff
+
+C:\VAR\gitrepo>git branch
+* master
+
+C:\VAR\gitrepo>notepad abc.txt
+
+C:\VAR\gitrepo>git diff
+
+C:\VAR\gitrepo>git diff  --staged
+
+C:\VAR\gitrepo>git add abc.txt
+
+C:\VAR\gitrepo>git diff  --staged
+diff --git a/abc.txt b/abc.txt
+new file mode 100644
+index 0000000..8baef1b
+--- /dev/null
++++ b/abc.txt
+@@ -0,0 +1 @@
++abc
+
+C:\VAR\gitrepo>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   abc.txt
+
+
+C:\VAR\gitrepo>git log
+commit 8e78eaae9859b31bd9ed3e115379c492360c831b (HEAD -> master)
+Author: arunajava567 <arunajava5672gmail.com>
+Date:   Thu Oct 10 09:42:22 2024 +0530
+
+    second commit
+
+commit 52e761f5fe66586a3fad5cc068af46b4075ef63e
+Author: arunajava567 <arunajava5672gmail.com>
+Date:   Thu Oct 10 09:39:30 2024 +0530
+
+    first commit
+
+C:\VAR\gitrepo>git show
+commit 8e78eaae9859b31bd9ed3e115379c492360c831b (HEAD -> master)
+Author: arunajava567 <arunajava5672gmail.com>
+Date:   Thu Oct 10 09:42:22 2024 +0530
+
+    second commit
+
+diff --git a/readme.txt b/readme.txt
+new file mode 100644
+index 0000000..2744f40
+--- /dev/null
++++ b/readme.txt
+@@ -0,0 +1 @@
++this is readme
+\ No newline at end of file
+
+C:\VAR\gitrepo>git log
+commit 8e78eaae9859b31bd9ed3e115379c492360c831b (HEAD -> master)
+Author: arunajava567 <arunajava5672gmail.com>
+Date:   Thu Oct 10 09:42:22 2024 +0530
+
+    second commit
+
+commit 52e761f5fe66586a3fad5cc068af46b4075ef63e
+Author: arunajava567 <arunajava5672gmail.com>
+Date:   Thu Oct 10 09:39:30 2024 +0530
+
+    first commit
+
+C:\VAR\gitrepo>git show
+commit 8e78eaae9859b31bd9ed3e115379c492360c831b (HEAD -> master)
+Author: arunajava567 <arunajava5672gmail.com>
+Date:   Thu Oct 10 09:42:22 2024 +0530
+
+    second commit
+
+diff --git a/readme.txt b/readme.txt
+new file mode 100644
+https://git-scm.com/downloads
+--- /dev/null
++++ b/readme.txt
+@@ -0,0 +1 @@
++this is readme
+\ No newline at end of file
+
+C:\VAR\gitrepo>
+C:\VAR\gitrepo>git blame intro.txt
+^52e761f (arunajava567 2024-10-10 09:39:30 +0530 1) git introduction
+
+C:\VAR\gitrepo>git blame intro.txt
+00000000 (Not Committed Yet 2024-10-10 09:51:30 +0530 1) git introduction
+00000000 (Not Committed Yet 2024-10-10 09:51:30 +0530 2)
+00000000 (Not Committed Yet 2024-10-10 09:51:30 +0530 3) ============
+00000000 (Not Committed Yet 2024-10-10 09:51:30 +0530 4)
+00000000 (Not Committed Yet 2024-10-10 09:51:30 +0530 5) ============
+00000000 (Not Committed Yet 2024-10-10 09:51:30 +0530 6)
+00000000 (Not Committed Yet 2024-10-10 09:51:30 +0530 7) ============
