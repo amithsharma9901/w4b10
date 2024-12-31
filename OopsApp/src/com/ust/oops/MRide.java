@@ -1,7 +1,8 @@
 package com.ust.oops;
 
 public class MRide extends Ride{
-	final int x=10;
+	//final 
+	int x=10;
 	@Override
 	int sq(int s) {  //dynamic , runtime , sub class
 		return 4*s;
