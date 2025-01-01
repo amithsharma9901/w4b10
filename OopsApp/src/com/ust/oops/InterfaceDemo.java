@@ -1,5 +1,4 @@
 package com.ust.oops;
-
 interface Vehicle{
 	int speed();
 	void milage();
@@ -28,7 +27,11 @@ public class InterfaceDemo {
 
 	public static void main(String[] args) {
 	
-		
+		Vehicle v=new Car();
+		v.milage();
+		System.out.println(v.speed());
+		Loan l=new Car();
+		System.out.println(l.getEmi());
 
 	}
 

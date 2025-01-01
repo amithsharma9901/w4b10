@@ -49,7 +49,7 @@ class Department{
 
 public class CompositionDemo {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) {  //Employee has-a Department
 		
 		Employee e=new Employee();  //main
 		Department d=new Department();  //part
