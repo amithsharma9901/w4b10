@@ -31,6 +31,24 @@ public class CustomListDemo {//main, client, test,run
 				             cs.dispCustomers();
 				             break;
 			         }
+			  
+			  case 3: {System.out.println("enter customer id to seach");
+              
+              Integer id=sc.nextInt();
+              
+	          cs.findCustomer(id);
+	          break;
+				  
+			  }
+ case 4: {System.out.println("enter customer id, name  to update");
+              
+              Integer id=sc.nextInt(); sc.nextLine();
+              String name=sc.nextLine();
+              
+	          cs.updateCustomer(id,name);
+	          break;
+				  
+			  }
 			  default: System.out.println(" Wrong Choice");
 			  }
 			  System.out.println("enter your choice(1..4)");
