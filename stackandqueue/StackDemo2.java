@@ -46,6 +46,8 @@ public class StackDemo2 {
     public static void main (String[] args)
     {
         Stack<Integer> stack = new Stack<Integer>();
+        stack.add(23);
+        stack.
 System.out.println(stack.empty());
 System.out.println(stack.pop());
 /*
