@@ -45,7 +45,7 @@ public class ProductTest {
 
 	public static void main(String[] args) {
 		//
-		TreeSet<Product> productSet=new TreeSet<>(new IdComparator());
+		TreeSet<Product> productSet=new TreeSet<>(new PriceComparator());
 		productSet.add(new Product(90,"bag",879.90));
 		productSet.add(new Product(60,"table",1879.90));
 		productSet.add(new Product(30,"pin",89.90));
