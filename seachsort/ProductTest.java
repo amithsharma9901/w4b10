@@ -64,6 +64,10 @@ public class ProductTest {
 		Comparator<Product> idComp=(p1,p2)->p1.id-p2.id;
 		productSet.stream().sorted(idComp).forEach(p->System.out.println(p));
 	
+		
+		// search for given product name in list of products ,display Product object with ( id,name,price) 
+		
+		
 
 	}
 
