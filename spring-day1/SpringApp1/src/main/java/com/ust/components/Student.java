@@ -1,9 +1,13 @@
 package com.ust.components;
 
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Student {
+//@Scope("prototype")
+public class Student implements InitializingBean,DisposableBean{
 	
 	Integer id;
 	String name;
@@ -18,7 +22,13 @@ public class Student {
 		this.id = id;
 		this.name = name;
 	}
-
+  public void afterPropertiesSet() {
+	  System.out.println("bean initialized");
+	  
+  }
+  public void destroy() {
+	  System.out.println("bean destroyed");
+  }
 
 	@Override
 	public String toString() {
