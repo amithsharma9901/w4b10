@@ -1,0 +1,41 @@
+
+
+/*    this is ccss comment */
+p{
+    color:hsl(147, 50%, 47%);
+    font-size:medium;
+    border-style: dotted;
+    margin-left: 5px;
+}
+
+h1{
+    color:rgb(255, 0, 0);
+    border-style: dashed;
+}
+
+/*
+body {
+    background-image: url("flower.jpg");
+  }
+*/
+
+  div {
+    text-shadow: 5px 5px;
+    width: 500px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+  }
+
+  a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: red;
+  }
