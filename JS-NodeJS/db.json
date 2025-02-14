@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Ayan",
+      "email": "ayan@exl.com"
+    },
+    {
+      "id": "2",
+      "name": "Tej",
+      "email": "tejak@exl.com"
+    },
+    {
+      "id": "3",
+      "name": "Luxmi",
+      "email": "luxmi@exl.com"
+    },
+    {
+      "id": "1b9b"
+    }
+  ]
+}
